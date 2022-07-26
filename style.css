@@ -2,6 +2,7 @@
        margin: 0;
        padding: 0;
        text-transform: capitalize;
+       box-sizing: border-box;
    }
 
    #socials {
