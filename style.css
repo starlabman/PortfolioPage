@@ -39,8 +39,8 @@
    }
 
    .socials img {
-       width: 40px;
-       margin: 5px;
+       width: 60px;
+     
        /* border: 2px solid black; */
        padding: 10px;
        transition: 500ms;
@@ -98,7 +98,7 @@
 
        .socials img {
            margin: 0%;
-           width: 30px;
+           
        }
 
        .portfolio {
@@ -118,6 +118,7 @@
 
        .socials img {
            margin: 0%;
+           width: 50px;
        }
 
    }
