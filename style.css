@@ -1,20 +1,14 @@
-   * {
+   *{
        margin: 0;
        padding: 0;
        text-transform: capitalize;
        box-sizing: border-box;
-   }
-
-   #socials {
-       list-style: none;
-       display: flex;
-   }
-
-   body {
+   } 
+   body{
        background: rgb(32, 32, 32);
+       overflow-x: hidden;
    }
-
-   .wrapper {
+   .wrapper{
        width: 100vw;
        height: 100vh;
        display: flex;
@@ -22,103 +16,78 @@
        justify-content: center;
        align-items: center;
        line-height: 4em;
-       /* background: rgb(32, 32, 32); */
        color: white;
        font-family: "Source Sans Pro", sans-serif;
    }
-
+    #socials{
+       list-style: none;
+       display: flex;
+   }
    .socials {
        display: flex;
        justify-content: center;
        border-radius: 50%;
-
    }
-
    .socials:hover {
        background: rgb(61, 59, 59);
    }
-
    .socials img {
        width: 60px;
-     
-       /* border: 2px solid black; */
        padding: 10px;
        transition: 500ms;
-
-       /* background: white; */
    }
-
    .wrapper h1 {
        font-size: 5em;
        letter-spacing: -0.04em;
    }
-
    .wrapper p {
        font-weight: bold;
        font-size: 30px;
        color: blueviolet;
    }
-
    .portfolio {
        text-decoration: none;
        font-size: 0.5em;
-
        padding: 5px 10px;
        background: blueviolet;
        color: black;
        border-radius: 30px;
-
    }
-
    .p {
        transition: 0.5s;
    }
-
    .p:hover {
        transform: scale(1.1);
        opacity: 0.7;
-
    }
-
    .user img {
        width: 150px;
-
        border-radius: 50%;
        box-shadow: 0px 0px 5px blueviolet;
    }
-
    @media screen and (max-width:500px) {
        .wrapper h1 {
-           font-size: 3.5em;
+           font-size: 3.2em;
        }
-
        .wrapper p {
            font-size: 1.5em;
        }
-
        .socials img {
-           margin: 0%;
-           
+           margin: 0%;  
        }
-
        .portfolio {
            font-size: 0.7em;
        }
-
    }
-
    @media screen and (max-width:350px) {
        .wrapper h1 {
            font-size: 2.5em;
        }
-
        .wrapper p {
            font-size: 1em;
        }
-
        .socials img {
            margin: 0%;
            width: 50px;
        }
-
    }
