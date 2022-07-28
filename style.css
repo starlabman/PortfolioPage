@@ -31,11 +31,13 @@
    .socials:hover {
        background: rgb(61, 59, 59);
    }
-   .socials img {
+   .socials svg {
        width: 60px;
        padding: 10px;
+       margin: 0px 3px;
        transition: 500ms;
    }
+        
    .wrapper h1 {
        font-size: 5em;
        letter-spacing: -0.04em;
@@ -72,7 +74,7 @@
        .wrapper p {
            font-size: 1.5em;
        }
-       .socials img {
+       .socials svg {
            margin: 0%;  
        }
        .portfolio {
@@ -86,7 +88,7 @@
        .wrapper p {
            font-size: 1em;
        }
-       .socials img {
+       .socials svg {
            margin: 0%;
            width: 50px;
        }
