@@ -5,8 +5,19 @@
        box-sizing: border-box;
    } 
    body{
-       background: rgb(32, 32, 32);
+       background:var(--black);
        overflow-x: hidden;
+    transition: 500ms;
+   }
+   :root{
+    --black:rgb(32, 32, 32);
+    --text:#fff;
+    --hover:rgb(61, 59, 59);
+   }
+   .light{
+    --black: rgb(243, 244, 246);
+        --text: rgb(32, 32, 32);
+        --hover:rgb(204, 204, 204);
    }
    .wrapper{
        width: 100vw;
@@ -16,7 +27,8 @@
        justify-content: center;
        align-items: center;
        line-height: 4em;
-       color: white;
+       color:var(--text);
+       position: relative;
        font-family: "Source Sans Pro", sans-serif;
    }
     #socials{
@@ -29,13 +41,14 @@
        border-radius: 50%;
    }
    .socials:hover {
-       background: rgb(61, 59, 59);
+       background: var(--hover);
    }
    .socials svg {
        width: 60px;
        padding: 10px;
        margin: 0px 3px;
        transition: 500ms;
+
    }
         
    .wrapper h1 {
@@ -65,8 +78,35 @@
    .user img {
        width: 150px;
        border-radius: 50%;
-       box-shadow: 0px 0px 5px blueviolet;
+       box-shadow: 0px 0px 5px var(--hover);
    }
+   .top p{
+    display: flex;
+    font-size: 18px;
+
+   }
+   .top{
+    position: absolute;
+    top: 20px;
+    left: 10%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+   
+
+
+   }
+     .i{
+            display: flex;
+            /* position: absolute; */
+            top:20px;
+            height: 40px;
+            align-items: center;
+            padding: 10px;
+            border-radius: 50%;
+            left: 10%;
+
+        }
    @media screen and (max-width:500px) {
        .wrapper h1 {
            font-size: 3.2em;
@@ -79,6 +119,9 @@
        }
        .portfolio {
            font-size: 0.7em;
+       }
+       .i{
+        left:15%
        }
    }
    @media screen and (max-width:350px) {
